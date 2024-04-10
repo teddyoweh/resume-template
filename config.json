@@ -1,0 +1,137 @@
+{
+    "id": "test-resume-template",
+    "name": "Resume template for testing",
+    "description": "This is a test template used to tests the features for cvbuilder",
+    "tags": [
+        "test"
+    ],
+    "image": "image.png",
+    "path": "resume/resume.tex",
+    "schema": {
+        "name": {
+            "type": "string",
+            "default": ""
+        },
+        "email": {
+            "type": "link",
+            "default": ""
+        },
+        "phone": {
+            "type": "link",
+            "default": ""
+        },
+        "github_url": {
+            "type": "link",
+            "default": ""
+        },
+        "linkedin": {
+            "type": "link",
+            "default": ""
+        },
+        "website": {
+            "type": "link",
+            "default": ""
+        },
+        "education": {
+            "type": "array",
+            "items": {
+                "university": {
+                    "type": "string",
+                    "default": ""
+                },
+                "year_start": {
+                    "type": "string",
+                    "default": ""
+                },
+                "year_end": {
+                    "type": "string",
+                    "default": ""
+                },
+                "degree": {
+                    "type": "string",
+                    "default": ""
+                },
+                "gpa": {
+                    "type": "integer",
+                    "default": 0
+                }
+            }
+        },
+        "skills": {
+            "type": "array",
+            "items": {
+                "skill": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "awards": {
+            "type": "array",
+            "items": {
+                "year_start": {
+                    "type": "string",
+                    "default": ""
+                },
+                "position": {
+                    "type": "string",
+                    "default": ""
+                },
+                "award": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "projects": {
+            "type": "array",
+            "items": {
+                "name": {
+                    "type": "string",
+                    "default": ""
+                },
+                "summary": {
+                    "type": "string",
+                    "default": ""
+                },
+                "link": {
+                    "type": "link",
+                    "default": ""
+                },
+                "year_start": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "experience": {
+            "type": "array",
+            "items": {
+                "company": {
+                    "type": "string",
+                    "default": ""
+                },
+                "position": {
+                    "type": "string",
+                    "default": ""
+                },
+                "year_start": {
+                    "type": "string",
+                    "default": ""
+                },
+                "year_end": {
+                    "type": "string",
+                    "default": ""
+                },
+                "location": {
+                    "type": "string",
+                    "default": ""
+                },
+                "summary": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        }
+    }
+}

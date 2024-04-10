@@ -1,0 +1,149 @@
+\newenvironment{education}{}{}
+\newenvironment{name}{}{}
+\newenvironment{university}{}{}
+\newenvironment{degree}{}{}
+\newenvironment{year_start}{}{}
+\newenvironment{year_end}{}{}
+\newenvironment{gpa}{}{}
+\newenvironment{email}{}{}
+\newenvironment{phone}{}{}
+\newenvironment{website}{}{}
+\newenvironment{linkedin}{}{}
+\newenvironment{github_url}{}{}
+\newenvironment{awards}{}{}
+\newenvironment{position}{}{}
+\newenvironment{award}{}{}
+\newenvironment{summary}{}{}
+\newenvironment{link}{}{}
+\newenvironment{experience}{}{}
+\newenvironment{company}{}{}
+\newenvironment{projects}{}{}
+\newenvironment{skills}{}{}
+\newenvironment{skill}{}{}
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[inline]{enumitem}
+\pagestyle{fancy}
+\fancyhf{}
+
+\titleformat{\subsection}[runin]
+{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{}{}[]
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{\begin{name}Parth Shah\end{name}}{ \urlstyle{same}
+\href{}{\begin{email}helloparthshah@gmail.com\end{email}} |
+\href{}{\begin{phone}+1 530-786-4289\end{phone}}\\
+\sectionsep
+\href{}{\begin{github_url}github.com/helloparthshah\end{github_url}} |
+\href{}{\begin{website}helloparthshah.github.io\end{website}} |
+\href{}{\begin{linkedin}linkedin.com/in/helloparthshah\end{linkedin}}
+}
+%\href{https://www.youtube.com/c/ParthShah12345}{YouTube}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\begin{education}
+\subsection*{\begin{university}University of California,\\ Davis\end{university}\\}
+\descript{\begin{degree}BS in Computer Science and Engineering\end{degree}}
+\location{\begin{year_start}2019\end{year_start} - \begin{year_end}2023\end{year_end}}
+\location{ GPA: \begin{gpa}3.7\end{gpa} / 4.0}
+\end{education}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+% \subsection{Programming}
+\location{Proficient with:}
+% \begin{enumerate*}[label=\textbullet{}]
+\begin{skills}
+• \begin{skill}Java\end{skill}
+\end{skills}
+% \end{enumerate*}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+% \begin{tabular}{rll}
+\begin{awards}
+\begin{year_start}2022\end{year_start} \begin{position}Winner\end{position} \begin{award}SacHacks\end{award}\\
+\end{awards}
+% \end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\begin{projects}
+\subsection*{\begin{name}Stadia Wireless\end{name}}
+\descript{\medspace|\medspace\href{}{\begin{link}GitHub\end{link}}}
+\location{\begin{year_start}2022\end{year_start}}
+\vspace{\topsep}
+\begin{tightemize}
+\item \begin{summary} Description \end{summary}
+\end{tightemize}
+\end{projects}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+
+% \hfill
+\begin{minipage}[t]{1\textwidth}
+\section{Experience}
+\begin{experience}
+\subsection*{\begin{company}Amazon\end{company}}
+\medspace|\medspace
+\descript{\begin{position}SDE Intern, Item Pipeline\end{position}}
+\location{\begin{year_start}June 2022\end{year_start} - \begin{year_end}Sep 2022\end{year_end} | \begin{location}Sunnyvale, CA\end{location}}
+\vspace{\topsep}
+\begin{tightemize}
+\item \begin{summary}Managed to create a Code Analyzer that detects bugs and enforces coding practices before deployment which would be used by over 8 teams consisting of over 100 users\end{summary}
+\end{tightemize}
+\end{experience}
+\sectionsep
+\end{minipage}
+\end{document}  
